@@ -1,4 +1,4 @@
-module github.com/itayporezky/valkey-glide/go
+module github.com/itayporezky/valkey-glide/go/v3
 
 go 1.22
 
