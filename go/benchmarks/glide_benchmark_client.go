@@ -5,9 +5,9 @@ package main
 import (
 	"context"
 
-	glide "github.com/valkey-io/valkey-glide/go/v2"
-	"github.com/valkey-io/valkey-glide/go/v2/config"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/interfaces"
+	glide "github.com/itayporezky/valkey-glide/go/v2"
+	"github.com/itayporezky/valkey-glide/go/v3/config"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
 )
 
 type glideBenchmarkClient struct {

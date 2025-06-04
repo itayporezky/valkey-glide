@@ -6,7 +6,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/valkey-io/valkey-glide/go/v2/options"
+	"github.com/itayporezky/valkey-glide/go/v3/options"
 )
 
 func ExampleClient_SetBit() {

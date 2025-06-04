@@ -13,9 +13,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/valkey-io/valkey-glide/go/v2/internal/errors"
-	"github.com/valkey-io/valkey-glide/go/v2/models"
-	"github.com/valkey-io/valkey-glide/go/v2/options"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/errors"
+	"github.com/itayporezky/valkey-glide/go/v3/models"
+	"github.com/itayporezky/valkey-glide/go/v3/options"
 )
 
 func checkResponseType(response *C.struct_CommandResponse, expectedType C.ResponseType, isNilable bool) error {
@@ -64,7 +64,7 @@ func convertCharArrayToString(response *C.struct_CommandResponse, isNilable bool
 	return models.CreateStringResult(string(byteSlice)), nil
 }
 
-// Fix after merging with https://github.com/valkey-io/valkey-glide/pull/2964
+// Fix after merging with https://github.com/itayporezky/valkey-glide/pull/2964
 func convertStringOrNilArray(response *C.struct_CommandResponse) ([]models.Result[string], error) {
 	typeErr := checkResponseType(response, C.Array, false)
 	if typeErr != nil {

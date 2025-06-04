@@ -11,16 +11,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/valkey-io/valkey-glide/go/v2/config"
-	"github.com/valkey-io/valkey-glide/go/v2/constants"
+	"github.com/itayporezky/valkey-glide/go/v3/config"
+	"github.com/itayporezky/valkey-glide/go/v3/constants"
 
 	"github.com/google/uuid"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/errors"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
+	"github.com/itayporezky/valkey-glide/go/v3/models"
+	"github.com/itayporezky/valkey-glide/go/v3/options"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/errors"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/interfaces"
-	"github.com/valkey-io/valkey-glide/go/v2/models"
-	"github.com/valkey-io/valkey-glide/go/v2/options"
 )
 
 const (
@@ -6876,7 +6876,7 @@ func (suite *GlideTestSuite) TestObjectEncoding() {
 	suite.runWithDefaultClients(func(client interfaces.BaseClientCommands) {
 		// Test 1: Check object encoding for embstr
 		// We can't use UUID for a key here because of a behavior change with long keys in Valkey 8.1
-		// see https://github.com/valkey-io/valkey/issues/2026
+		// see https://github.com/itayporezky/valkey/issues/2026
 		key := "testKey"
 		value1 := "Hello"
 		t := suite.T()

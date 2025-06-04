@@ -2,8 +2,8 @@
 package options
 
 import (
-	"github.com/valkey-io/valkey-glide/go/v2/constants"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/utils"
+	"github.com/itayporezky/valkey-glide/go/v3/constants"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/utils"
 )
 
 // This struct represents the optional arguments for the ZINTER command.

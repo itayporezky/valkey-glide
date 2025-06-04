@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
+	glide "github.com/itayporezky/valkey-glide/go/v2"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
 	"github.com/stretchr/testify/assert"
-	glide "github.com/valkey-io/valkey-glide/go/v2"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/interfaces"
 )
 
 // TestPubSub_Patterns tests all combinations of client types and message reading methods

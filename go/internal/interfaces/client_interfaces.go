@@ -5,8 +5,8 @@ package interfaces
 import (
 	"context"
 
-	"github.com/valkey-io/valkey-glide/go/v2/options"
-	"github.com/valkey-io/valkey-glide/go/v2/pipeline"
+	"github.com/itayporezky/valkey-glide/go/v3/options"
+	"github.com/itayporezky/valkey-glide/go/v3/pipeline"
 )
 
 type BaseClientCommands interface {

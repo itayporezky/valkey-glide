@@ -5,9 +5,9 @@ package interfaces
 import (
 	"context"
 
-	"github.com/valkey-io/valkey-glide/go/v2/config"
-	"github.com/valkey-io/valkey-glide/go/v2/models"
-	"github.com/valkey-io/valkey-glide/go/v2/options"
+	"github.com/itayporezky/valkey-glide/go/v3/config"
+	"github.com/itayporezky/valkey-glide/go/v3/models"
+	"github.com/itayporezky/valkey-glide/go/v3/options"
 )
 
 // GenericClusterCommands supports commands for the "Generic Commands" group for cluster client.

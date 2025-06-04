@@ -11,15 +11,15 @@ import (
 	"time"
 
 	"github.com/google/uuid"
+	glide "github.com/itayporezky/valkey-glide/go/v2"
+	"github.com/itayporezky/valkey-glide/go/v3/config"
+	"github.com/itayporezky/valkey-glide/go/v3/constants"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/errors"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
+	"github.com/itayporezky/valkey-glide/go/v3/models"
+	"github.com/itayporezky/valkey-glide/go/v3/options"
+	"github.com/itayporezky/valkey-glide/go/v3/pipeline"
 	"github.com/stretchr/testify/assert"
-	glide "github.com/valkey-io/valkey-glide/go/v2"
-	"github.com/valkey-io/valkey-glide/go/v2/config"
-	"github.com/valkey-io/valkey-glide/go/v2/constants"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/errors"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/interfaces"
-	"github.com/valkey-io/valkey-glide/go/v2/models"
-	"github.com/valkey-io/valkey-glide/go/v2/options"
-	"github.com/valkey-io/valkey-glide/go/v2/pipeline"
 )
 
 func (suite *GlideTestSuite) runBatchTest(test func(client interfaces.BaseClientCommands, isAtomic bool)) {

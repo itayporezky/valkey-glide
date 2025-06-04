@@ -8,7 +8,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/valkey-io/valkey-glide/go/v2/constants"
+	"github.com/itayporezky/valkey-glide/go/v3/constants"
 )
 
 var FINISHED_SCAN_CURSOR = "finished"

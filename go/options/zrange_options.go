@@ -3,8 +3,8 @@
 package options
 
 import (
-	"github.com/valkey-io/valkey-glide/go/v2/constants"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/utils"
+	"github.com/itayporezky/valkey-glide/go/v3/constants"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/utils"
 )
 
 // Query for `ZRange` in [SortedSetCommands]
@@ -75,7 +75,7 @@ func NewInfiniteLexBoundary(bound constants.InfBoundary) lexBoundary {
 	return lexBoundary(string(bound))
 }
 
-// TODO re-use limit from `SORT` https://github.com/valkey-io/valkey-glide/pull/2888
+// TODO re-use limit from `SORT` https://github.com/itayporezky/valkey-glide/pull/2888
 // Limit struct represents the range of elements to retrieve
 // The LIMIT argument is commonly used to specify a subset of results from the matching elements, similar to the
 // LIMIT clause in SQL (e.g., `SELECT LIMIT offset, count`).

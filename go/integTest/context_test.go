@@ -6,9 +6,9 @@ import (
 	"context"
 	"time"
 
+	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
+	"github.com/itayporezky/valkey-glide/go/v3/options"
 	"github.com/stretchr/testify/assert"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/interfaces"
-	"github.com/valkey-io/valkey-glide/go/v2/options"
 )
 
 // TestContext_CancelBeforeExecution tests what happens when the context is

@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/itayporezky/valkey-glide/go/v3/config"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/protobuf"
 	"github.com/stretchr/testify/assert"
-	"github.com/valkey-io/valkey-glide/go/v2/config"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/protobuf"
 )
 
 func TestSimpleNodeRoute(t *testing.T) {

@@ -8,11 +8,11 @@ import (
 	"sync"
 	"time"
 
+	glide "github.com/itayporezky/valkey-glide/go/v2"
+	"github.com/itayporezky/valkey-glide/go/v3/config"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/errors"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
 	"github.com/stretchr/testify/assert"
-	glide "github.com/valkey-io/valkey-glide/go/v2"
-	"github.com/valkey-io/valkey-glide/go/v2/config"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/errors"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/interfaces"
 )
 
 func (suite *GlideTestSuite) TestStandaloneConnect() {

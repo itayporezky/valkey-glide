@@ -8,14 +8,14 @@ import "C"
 import (
 	"context"
 
-	"github.com/valkey-io/valkey-glide/go/v2/config"
+	"github.com/itayporezky/valkey-glide/go/v3/config"
 
-	"github.com/valkey-io/valkey-glide/go/v2/constants"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/interfaces"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/utils"
-	"github.com/valkey-io/valkey-glide/go/v2/models"
-	"github.com/valkey-io/valkey-glide/go/v2/options"
-	"github.com/valkey-io/valkey-glide/go/v2/pipeline"
+	"github.com/itayporezky/valkey-glide/go/v3/constants"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/utils"
+	"github.com/itayporezky/valkey-glide/go/v3/models"
+	"github.com/itayporezky/valkey-glide/go/v3/options"
+	"github.com/itayporezky/valkey-glide/go/v3/pipeline"
 )
 
 // Client interface compliance check.
@@ -26,7 +26,7 @@ var _ interfaces.GlideClientCommands = (*Client)(nil)
 //
 // For full documentation refer to [Valkey Glide Wiki].
 //
-// [Valkey Glide Wiki]: https://github.com/valkey-io/valkey-glide/wiki/Golang-wrapper#standalone
+// [Valkey Glide Wiki]: https://github.com/itayporezky/valkey-glide/wiki/Golang-wrapper#standalone
 type Client struct {
 	*baseClient
 }
@@ -146,7 +146,7 @@ func (client *Client) ExecWithOptions(
 //
 //	The returned value for the custom command.
 //
-// [Valkey GLIDE Wiki]: https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#custom-command
+// [Valkey GLIDE Wiki]: https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#custom-command
 func (client *Client) CustomCommand(ctx context.Context, args []string) (any, error) {
 	res, err := client.executeCommand(ctx, C.CustomCommand, args)
 	if err != nil {

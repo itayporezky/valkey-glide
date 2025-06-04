@@ -29,16 +29,16 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/valkey-io/valkey-glide/go/v2/constants"
+	"github.com/itayporezky/valkey-glide/go/v3/constants"
 
-	"github.com/valkey-io/valkey-glide/go/v2/config"
-	"github.com/valkey-io/valkey-glide/go/v2/internal"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/errors"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/protobuf"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/utils"
-	"github.com/valkey-io/valkey-glide/go/v2/models"
-	"github.com/valkey-io/valkey-glide/go/v2/options"
-	"github.com/valkey-io/valkey-glide/go/v2/pipeline"
+	"github.com/itayporezky/valkey-glide/go/v3/config"
+	"github.com/itayporezky/valkey-glide/go/v3/internal"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/errors"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/protobuf"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/utils"
+	"github.com/itayporezky/valkey-glide/go/v3/models"
+	"github.com/itayporezky/valkey-glide/go/v3/options"
+	"github.com/itayporezky/valkey-glide/go/v3/pipeline"
 	"google.golang.org/protobuf/proto"
 )
 
@@ -2885,7 +2885,7 @@ func (client *baseClient) LInsert(
 //	If no element could be popped and the timeout expired, returns `nil`.
 //
 // [valkey.io]: https://valkey.io/commands/blpop/
-// [Blocking Commands]: https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#blocking-commands
+// [Blocking Commands]: https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#blocking-commands
 func (client *baseClient) BLPop(ctx context.Context, keys []string, timeoutSecs float64) ([]string, error) {
 	result, err := client.executeCommand(ctx, C.BLPop, append(keys, utils.FloatToString(timeoutSecs)))
 	if err != nil {
@@ -2918,7 +2918,7 @@ func (client *baseClient) BLPop(ctx context.Context, keys []string, timeoutSecs 
 //	If no element could be popped and the timeoutSecs expired, returns `nil`.
 //
 // [valkey.io]: https://valkey.io/commands/brpop/
-// [Blocking Commands]: https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#blocking-commands
+// [Blocking Commands]: https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#blocking-commands
 func (client *baseClient) BRPop(ctx context.Context, keys []string, timeoutSecs float64) ([]string, error) {
 	result, err := client.executeCommand(ctx, C.BRPop, append(keys, utils.FloatToString(timeoutSecs)))
 	if err != nil {
@@ -3110,7 +3110,7 @@ func (client *baseClient) LMPopCount(
 //	If no member could be popped and the timeout expired, returns `nil`.
 //
 // [valkey.io]: https://valkey.io/commands/blmpop/
-// [Blocking Commands]: https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#blocking-commands
+// [Blocking Commands]: https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#blocking-commands
 func (client *baseClient) BLMPop(
 	ctx context.Context,
 	keys []string,
@@ -3169,7 +3169,7 @@ func (client *baseClient) BLMPop(
 //	If no member could be popped and the timeout expired, returns `nil`.
 //
 // [valkey.io]: https://valkey.io/commands/blmpop/
-// [Blocking Commands]: https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#blocking-commands
+// [Blocking Commands]: https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#blocking-commands
 func (client *baseClient) BLMPopCount(
 	ctx context.Context,
 	keys []string,
@@ -3300,7 +3300,7 @@ func (client *baseClient) LMove(
 //	operation timed-out.
 //
 // [valkey.io]: https://valkey.io/commands/blmove/
-// [Blocking Commands]: https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#blocking-commands
+// [Blocking Commands]: https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#blocking-commands
 func (client *baseClient) BLMove(
 	ctx context.Context,
 	source string,
@@ -4560,7 +4560,7 @@ func (client *baseClient) ZCard(ctx context.Context, key string) (int64, error) 
 //
 // [valkey.io]: https://valkey.io/commands/bzpopmin/
 //
-// [Blocking commands]: https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#blocking-commands
+// [Blocking commands]: https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#blocking-commands
 func (client *baseClient) BZPopMin(
 	ctx context.Context,
 	keys []string,
@@ -4605,7 +4605,7 @@ func (client *baseClient) BZPopMin(
 //	Returns `nil` if no member could be popped and the timeout expired.
 //
 // [valkey.io]: https://valkey.io/commands/bzmpop/
-// [Blocking Commands]: https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#blocking-commands
+// [Blocking Commands]: https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#blocking-commands
 func (client *baseClient) BZMPop(
 	ctx context.Context,
 	keys []string,
@@ -4669,7 +4669,7 @@ func (client *baseClient) BZMPop(
 //	Returns `nil` if no member could be popped and the timeout expired.
 //
 // [valkey.io]: https://valkey.io/commands/bzmpop/
-// [Blocking Commands]: https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#blocking-commands
+// [Blocking Commands]: https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#blocking-commands
 func (client *baseClient) BZMPopWithOptions(
 	ctx context.Context,
 	keys []string,
@@ -7624,7 +7624,7 @@ func (client *baseClient) ZLexCount(ctx context.Context, key string, rangeQuery 
 //	returns `nil`.
 //
 // [valkey.io]: https://valkey.io/commands/bzpopmax/
-// [Blocking Commands]: https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#blocking-commands
+// [Blocking Commands]: https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#blocking-commands
 func (client *baseClient) BZPopMax(
 	ctx context.Context,
 	keys []string,

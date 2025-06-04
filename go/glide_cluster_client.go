@@ -9,14 +9,14 @@ import (
 	"context"
 	"unsafe"
 
-	"github.com/valkey-io/valkey-glide/go/v2/config"
-	"github.com/valkey-io/valkey-glide/go/v2/constants"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/errors"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/interfaces"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/utils"
-	"github.com/valkey-io/valkey-glide/go/v2/models"
-	"github.com/valkey-io/valkey-glide/go/v2/options"
-	"github.com/valkey-io/valkey-glide/go/v2/pipeline"
+	"github.com/itayporezky/valkey-glide/go/v3/config"
+	"github.com/itayporezky/valkey-glide/go/v3/constants"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/errors"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/utils"
+	"github.com/itayporezky/valkey-glide/go/v3/models"
+	"github.com/itayporezky/valkey-glide/go/v3/options"
+	"github.com/itayporezky/valkey-glide/go/v3/pipeline"
 )
 
 // GlideClusterClient interface compliance check.
@@ -27,7 +27,7 @@ var _ interfaces.GlideClusterClientCommands = (*ClusterClient)(nil)
 //
 // For full documentation refer to [Valkey Glide Wiki].
 //
-// [Valkey Glide Wiki]: https://github.com/valkey-io/valkey-glide/wiki/Golang-wrapper#cluster
+// [Valkey Glide Wiki]: https://github.com/itayporezky/valkey-glide/wiki/Golang-wrapper#cluster
 type ClusterClient struct {
 	*baseClient
 }
@@ -203,7 +203,7 @@ func (client *ClusterClient) ExecWithOptions(
 //
 //	The returned value for the custom command.
 //
-// [Valkey GLIDE Wiki]: https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#custom-command
+// [Valkey GLIDE Wiki]: https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#custom-command
 func (client *ClusterClient) CustomCommand(ctx context.Context, args []string) (models.ClusterValue[any], error) {
 	res, err := client.executeCommand(ctx, C.CustomCommand, args)
 	if err != nil {
@@ -314,7 +314,7 @@ func (client *ClusterClient) InfoWithOptions(
 //
 //	The returning value depends on the executed command and route.
 //
-// [Valkey GLIDE Wiki]: https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#custom-command
+// [Valkey GLIDE Wiki]: https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#custom-command
 func (client *ClusterClient) CustomCommandWithRoute(ctx context.Context,
 	args []string,
 	route config.Route,
@@ -708,7 +708,7 @@ func (client *ClusterClient) clusterScan(
 // For each iteration, a new cursor object should be used to continue the scan.
 // Using the same cursor object for multiple iterations will result in the same keys or unexpected behavior.
 // For more information about the Cluster Scan implementation, see
-// https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#cluster-scan.
+// https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#cluster-scan.
 //
 // Like the SCAN command, the method can be used to iterate over the keys in the database,
 // returning all keys the database has from when the scan started until the scan ends.
@@ -747,7 +747,7 @@ func (client *ClusterClient) Scan(
 // For each iteration, a new cursor object should be used to continue the scan.
 // Using the same cursor object for multiple iterations will result in the same keys or unexpected behavior.
 // For more information about the Cluster Scan implementation, see
-// https://github.com/valkey-io/valkey-glide/wiki/General-Concepts#cluster-scan.
+// https://github.com/itayporezky/valkey-glide/wiki/General-Concepts#cluster-scan.
 //
 // Like the SCAN command, the method can be used to iterate over the keys in the database,
 // returning all keys the database has from when the scan started until the scan ends.

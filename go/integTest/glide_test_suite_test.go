@@ -19,15 +19,15 @@ import (
 	"time"
 
 	"github.com/google/uuid"
+	glide "github.com/itayporezky/valkey-glide/go/v2"
+	"github.com/itayporezky/valkey-glide/go/v3/config"
+	"github.com/itayporezky/valkey-glide/go/v3/constants"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
+	"github.com/itayporezky/valkey-glide/go/v3/models"
+	"github.com/itayporezky/valkey-glide/go/v3/options"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	glide "github.com/valkey-io/valkey-glide/go/v2"
-	"github.com/valkey-io/valkey-glide/go/v2/config"
-	"github.com/valkey-io/valkey-glide/go/v2/constants"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/interfaces"
-	"github.com/valkey-io/valkey-glide/go/v2/models"
-	"github.com/valkey-io/valkey-glide/go/v2/options"
 )
 
 type ClientTypeFlag uint
@@ -69,7 +69,7 @@ func (suite *GlideTestSuite) SetupSuite() {
 	// If an error occurs, we ignore it in case the servers actually were stopped before running this.
 	runClusterManager(suite, []string{"stop", "--prefix", "cluster"}, true)
 
-	// Delete dirs if stop failed due to https://github.com/valkey-io/valkey-glide/issues/849
+	// Delete dirs if stop failed due to https://github.com/itayporezky/valkey-glide/issues/849
 	err := os.RemoveAll("../../utils/clusters")
 	if err != nil && !os.IsNotExist(err) {
 		log.Fatal(err)

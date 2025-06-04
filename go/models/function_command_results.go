@@ -5,7 +5,7 @@ package models
 import (
 	"time"
 
-	"github.com/valkey-io/valkey-glide/go/v2/constants"
+	"github.com/itayporezky/valkey-glide/go/v3/constants"
 )
 
 type Engine struct {

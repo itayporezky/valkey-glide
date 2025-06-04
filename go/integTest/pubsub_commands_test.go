@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
+	glide "github.com/itayporezky/valkey-glide/go/v2"
+	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	glide "github.com/valkey-io/valkey-glide/go/v2"
-	"github.com/valkey-io/valkey-glide/go/v2/internal/interfaces"
 )
 
 // TestPubSubChannels tests the PubSubChannels command for standalone client

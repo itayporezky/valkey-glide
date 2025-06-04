@@ -46,7 +46,7 @@ import (
 //
 // Example usage:
 //
-//		import "github.com/valkey-io/valkey-glide/go/v2"
+//		import "github.com/itayporezky/valkey-glide/go/v2"
 //
 //		config := glide.OpenTelemetryConfig{
 //			Traces: &glide.OpenTelemetryTracesConfig{
@@ -113,7 +113,7 @@ var (
 //
 // Example usage:
 //
-//		import "github.com/valkey-io/valkey-glide/go/v2"
+//		import "github.com/itayporezky/valkey-glide/go/v2"
 //
 //		config := glide.OpenTelemetryConfig{
 //			Traces: &glide.OpenTelemetryTracesConfig{

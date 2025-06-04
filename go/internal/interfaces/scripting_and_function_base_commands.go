@@ -5,7 +5,7 @@ package interfaces
 import (
 	"context"
 
-	"github.com/valkey-io/valkey-glide/go/v2/options"
+	"github.com/itayporezky/valkey-glide/go/v3/options"
 )
 
 // Supports commands and transactions for the "Scripting and Function" group for a standalone

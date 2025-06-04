@@ -5,9 +5,9 @@ package interfaces
 import (
 	"context"
 
-	"github.com/valkey-io/valkey-glide/go/v2/constants"
-	"github.com/valkey-io/valkey-glide/go/v2/models"
-	"github.com/valkey-io/valkey-glide/go/v2/options"
+	"github.com/itayporezky/valkey-glide/go/v3/constants"
+	"github.com/itayporezky/valkey-glide/go/v3/models"
+	"github.com/itayporezky/valkey-glide/go/v3/options"
 )
 
 // SortedSetCommands supports commands and transactions for the "Sorted Set Commands" group for standalone and cluster clients.

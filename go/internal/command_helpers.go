@@ -3,7 +3,7 @@
 package internal
 
 import (
-	"github.com/valkey-io/valkey-glide/go/v2/constants"
+	"github.com/itayporezky/valkey-glide/go/v3/constants"
 )
 
 // Combine `args` with `keysAndIds` and `options` into arguments for a stream command

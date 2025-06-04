@@ -2,7 +2,7 @@
 
 package options
 
-import "github.com/valkey-io/valkey-glide/go/v2/constants"
+import "github.com/itayporezky/valkey-glide/go/v3/constants"
 
 type ScanOptions struct {
 	BaseScanOptions
