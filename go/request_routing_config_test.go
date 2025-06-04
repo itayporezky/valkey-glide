@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/itayporezky/valkey-glide/go/v3/config"
-	"github.com/itayporezky/valkey-glide/go/v3/internal/protobuf"
+	"github.com/itayporezky/valkey-glide/go/v4/config"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/protobuf"
 	"github.com/stretchr/testify/assert"
 )
 

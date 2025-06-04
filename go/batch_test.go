@@ -6,9 +6,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/itayporezky/valkey-glide/go/v3/config"
-	"github.com/itayporezky/valkey-glide/go/v3/options"
-	"github.com/itayporezky/valkey-glide/go/v3/pipeline"
+	"github.com/itayporezky/valkey-glide/go/v4/config"
+	"github.com/itayporezky/valkey-glide/go/v4/options"
+	"github.com/itayporezky/valkey-glide/go/v4/pipeline"
 )
 
 // TODO replace CustomCommand

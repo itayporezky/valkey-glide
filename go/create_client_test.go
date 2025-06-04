@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	config2 "github.com/itayporezky/valkey-glide/go/v3/config"
+	config2 "github.com/itayporezky/valkey-glide/go/v4/config"
 )
 
 func ExampleNewClient() {

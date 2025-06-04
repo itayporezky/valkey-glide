@@ -3,8 +3,8 @@
 package config
 
 import (
-	"github.com/itayporezky/valkey-glide/go/v3/internal/protobuf"
-	"github.com/itayporezky/valkey-glide/go/v3/models"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/protobuf"
+	"github.com/itayporezky/valkey-glide/go/v4/models"
 )
 
 // *** BaseSubscriptionConfig ***

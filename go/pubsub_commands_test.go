@@ -8,7 +8,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/itayporezky/valkey-glide/go/v3/config"
+	"github.com/itayporezky/valkey-glide/go/v4/config"
 )
 
 func ExampleClient_Publish() {

@@ -2,7 +2,7 @@
 
 package options
 
-import "github.com/itayporezky/valkey-glide/go/v3/config"
+import "github.com/itayporezky/valkey-glide/go/v4/config"
 
 type DBSizeOptions struct {
 	Route config.Route

@@ -6,12 +6,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/itayporezky/valkey-glide/go/v3/constants"
+	"github.com/itayporezky/valkey-glide/go/v4/constants"
 
 	"github.com/google/uuid"
 
-	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
-	"github.com/itayporezky/valkey-glide/go/v3/options"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/interfaces"
+	"github.com/itayporezky/valkey-glide/go/v4/options"
 )
 
 func ExampleClient_GeoAdd() {

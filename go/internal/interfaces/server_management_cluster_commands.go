@@ -5,8 +5,8 @@ package interfaces
 import (
 	"context"
 
-	"github.com/itayporezky/valkey-glide/go/v3/models"
-	"github.com/itayporezky/valkey-glide/go/v3/options"
+	"github.com/itayporezky/valkey-glide/go/v4/models"
+	"github.com/itayporezky/valkey-glide/go/v4/options"
 )
 
 // ServerManagementCommands supports commands for the "Server Management" group for a cluster client.

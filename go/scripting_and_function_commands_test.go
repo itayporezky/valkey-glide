@@ -8,10 +8,10 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/itayporezky/valkey-glide/go/v3/config"
-	"github.com/itayporezky/valkey-glide/go/v3/constants"
-	"github.com/itayporezky/valkey-glide/go/v3/models"
-	"github.com/itayporezky/valkey-glide/go/v3/options"
+	"github.com/itayporezky/valkey-glide/go/v4/config"
+	"github.com/itayporezky/valkey-glide/go/v4/constants"
+	"github.com/itayporezky/valkey-glide/go/v4/models"
+	"github.com/itayporezky/valkey-glide/go/v4/options"
 )
 
 var (

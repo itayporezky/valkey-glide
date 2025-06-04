@@ -5,8 +5,8 @@ package interfaces
 import (
 	"context"
 
-	"github.com/itayporezky/valkey-glide/go/v3/models"
-	"github.com/itayporezky/valkey-glide/go/v3/options"
+	"github.com/itayporezky/valkey-glide/go/v4/models"
+	"github.com/itayporezky/valkey-glide/go/v4/options"
 )
 
 // GenericCommands supports commands for the "Generic Commands" group for standalone client.

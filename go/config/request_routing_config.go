@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/itayporezky/valkey-glide/go/v3/internal/errors"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/errors"
 )
 
 // Request routing basic interface. Please use one of the following:

@@ -11,8 +11,8 @@ import (
 	"log"
 	"sync"
 
-	"github.com/itayporezky/valkey-glide/go/v3/config"
-	"github.com/itayporezky/valkey-glide/go/v3/models"
+	"github.com/itayporezky/valkey-glide/go/v4/config"
+	"github.com/itayporezky/valkey-glide/go/v4/models"
 )
 
 var (

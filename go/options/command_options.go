@@ -5,10 +5,10 @@ package options
 import (
 	"strconv"
 
-	"github.com/itayporezky/valkey-glide/go/v3/constants"
+	"github.com/itayporezky/valkey-glide/go/v4/constants"
 
-	"github.com/itayporezky/valkey-glide/go/v3/internal/errors"
-	"github.com/itayporezky/valkey-glide/go/v3/internal/utils"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/errors"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/utils"
 )
 
 // SetOptions represents optional arguments for the [api.StringCommands.SetWithOptions] command.

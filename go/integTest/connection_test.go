@@ -9,9 +9,9 @@ import (
 	"time"
 
 	glide "github.com/itayporezky/valkey-glide/go/v2"
-	"github.com/itayporezky/valkey-glide/go/v3/config"
-	"github.com/itayporezky/valkey-glide/go/v3/internal/errors"
-	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
+	"github.com/itayporezky/valkey-glide/go/v4/config"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/errors"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/interfaces"
 	"github.com/stretchr/testify/assert"
 )
 

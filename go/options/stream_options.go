@@ -3,8 +3,8 @@
 package options
 
 import (
-	"github.com/itayporezky/valkey-glide/go/v3/constants"
-	"github.com/itayporezky/valkey-glide/go/v3/internal/utils"
+	"github.com/itayporezky/valkey-glide/go/v4/constants"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/utils"
 )
 
 type triStateBool int

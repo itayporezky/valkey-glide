@@ -2,7 +2,7 @@
 
 package constants
 
-import "github.com/itayporezky/valkey-glide/go/v3/internal/errors"
+import "github.com/itayporezky/valkey-glide/go/v4/internal/errors"
 
 const (
 	CountKeyword      string = "COUNT"      // Valkey API keyword used to extract specific number of matching indices from a list.

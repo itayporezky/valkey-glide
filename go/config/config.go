@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/itayporezky/valkey-glide/go/v3/internal/protobuf"
-	"github.com/itayporezky/valkey-glide/go/v3/internal/utils"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/protobuf"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/utils"
 )
 
 const (

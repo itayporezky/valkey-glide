@@ -9,10 +9,10 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/itayporezky/valkey-glide/go/v3/config"
-	"github.com/itayporezky/valkey-glide/go/v3/internal/errors"
-	"github.com/itayporezky/valkey-glide/go/v3/internal/utils"
-	"github.com/itayporezky/valkey-glide/go/v3/options"
+	"github.com/itayporezky/valkey-glide/go/v4/config"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/errors"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/utils"
+	"github.com/itayporezky/valkey-glide/go/v4/options"
 )
 
 // TODO - move to internals

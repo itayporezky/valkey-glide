@@ -14,8 +14,8 @@ import (
 	"time"
 
 	glide "github.com/itayporezky/valkey-glide/go/v2"
-	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
-	"github.com/itayporezky/valkey-glide/go/v3/pipeline"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/interfaces"
+	"github.com/itayporezky/valkey-glide/go/v4/pipeline"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

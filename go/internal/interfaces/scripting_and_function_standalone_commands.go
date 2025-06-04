@@ -5,8 +5,8 @@ package interfaces
 import (
 	"context"
 
-	"github.com/itayporezky/valkey-glide/go/v3/constants"
-	"github.com/itayporezky/valkey-glide/go/v3/models"
+	"github.com/itayporezky/valkey-glide/go/v4/constants"
+	"github.com/itayporezky/valkey-glide/go/v4/models"
 )
 
 // Supports commands and transactions for the "Scripting and Function" group for a standalone

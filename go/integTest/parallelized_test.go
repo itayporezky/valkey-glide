@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/itayporezky/valkey-glide/go/v3/internal/interfaces"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/interfaces"
 )
 
 func (suite *GlideTestSuite) TestParallelizedSetWithGC() {

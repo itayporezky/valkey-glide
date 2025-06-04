@@ -5,8 +5,8 @@ package interfaces
 import (
 	"context"
 
-	"github.com/itayporezky/valkey-glide/go/v3/models"
-	"github.com/itayporezky/valkey-glide/go/v3/options"
+	"github.com/itayporezky/valkey-glide/go/v4/models"
+	"github.com/itayporezky/valkey-glide/go/v4/options"
 )
 
 // Supports commands and transactions for the "String" group of commands for standalone and cluster clients.

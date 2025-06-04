@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/itayporezky/valkey-glide/go/v3/constants"
-	"github.com/itayporezky/valkey-glide/go/v3/options"
+	"github.com/itayporezky/valkey-glide/go/v4/constants"
+	"github.com/itayporezky/valkey-glide/go/v4/options"
 )
 
 func ExampleClient_Del() {

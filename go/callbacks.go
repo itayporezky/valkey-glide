@@ -10,8 +10,8 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/itayporezky/valkey-glide/go/v3/internal/errors"
-	"github.com/itayporezky/valkey-glide/go/v3/models"
+	"github.com/itayporezky/valkey-glide/go/v4/internal/errors"
+	"github.com/itayporezky/valkey-glide/go/v4/models"
 )
 
 // Registry to track clients by their pointer address
